@@ -53,7 +53,15 @@ public class Calculator {
 
         return result;
     }
-
-
-
+    private static double multiplication(double a, double b){
+        return a * b;
+    }
+    private static double division(double a, double b){
+        if (b != 0){
+            return a / b;
+        }else{
+            System.out.println("cannot divide by 0");
+        }
+        return 0;
+    }
 }
