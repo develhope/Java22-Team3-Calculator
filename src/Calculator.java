@@ -54,6 +54,23 @@ public class Calculator {
         return result;
     }
 
+//funzione addizione e sottrazione
 
+    private static double sum(double a, double b) {
+        return a+b;
+    }
 
+    private static double difference(double a, double b) {
+        return a-b;
+    }
+    private static double multiplication(double a, double b) {
+        return a*b;
+    }
+    private static double division(double a, double b) {
+        return a/b;
+    }
+    private static double exponent(double a, double b) {
+        return Math.pow(a,b);
+    }
 }
+
