@@ -54,7 +54,7 @@ public class Calculator {
         return result;
     }
 
-//funzione addizione e sottrazione
+//funzione addizione,sottrazione,moltiplicazione,divisione,potenza
 
     private static double sum(double a, double b) {
         return a+b;
@@ -71,6 +71,14 @@ public class Calculator {
     }
     private static double exponent(double a, double b) {
         return Math.pow(a,b);
+    }
+    public static double evenOrOdd(double value) {
+        if (value % 2 == 0) {
+            System.out.println(value + " is even");
+        } else {
+            System.out.println(value + " is odd");
+        }
+        return value;
     }
 }
 
