@@ -13,9 +13,9 @@ public class Main {
         input.close();
         String type = Calculator.recognizeOperation(operation);
         double result = Calculator.executeOperation(operation, type);
-        System.out.println("The result of the operation " + operation + "is" + result);
-        String evenOdd = Calculator.evenOdd(result);
-        System.out.println("The result is: " + evenOdd);
-        develop
+        System.out.println("The result of the operation " + operation + " is " + result);
+        //int evenOdd = EvenOrOdd.evenOrOdd (double);
+        //System.out.println("The result is: " + evenOdd);
+        //develop
     }
 }

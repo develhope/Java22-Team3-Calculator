@@ -14,6 +14,8 @@ public class Calculator {
             type = "DIVISION";
         } else if (operation.contains("^")) {
             type = "EXPONENT";
+        } else if (operation.contains("=")) {
+            type = "EVEN_OR_ODD";
         } else {
             type = "UNKNOWN";
         }
@@ -46,6 +48,8 @@ public class Calculator {
             case "EXPONENT":
                 result = exponent(a, b);
                 break;
+            case "EVEN_OR_ODD":
+                result = evenOrOdd(a);
             default:
                 System.out.println("Invalid operation");
                 break;
@@ -54,6 +58,7 @@ public class Calculator {
         return result;
     }
     private static double multiplication(double a, double b){
+
         return a * b;
     }
     private static double division(double a, double b){
@@ -63,5 +68,22 @@ public class Calculator {
             System.out.println("cannot divide by 0");
         }
         return 0;
+    }
+    private static double sum(double a, double b) {
+        return a + b;
+    }
+    private static double difference(double a, double b){
+        return a - b;
+    }
+    private static double exponent(double a, double b){
+        return Math.pow(a, b);
+    }
+    public static double evenOrOdd(double value) {
+        if (value % 2 == 0) {
+            System.out.println(value + " Is even");
+        } else {
+            System.out.println(value + " Is odd");
+        }
+        return value;
     }
 }

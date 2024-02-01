@@ -9,11 +9,12 @@ public class EvenOrOdd {
 
     }
 
-    public static void evenOrOdd(int value) {
+    public static int evenOrOdd(int value) {
         if (value % 2 == 0) {
             System.out.println(value + " Is even");
         } else {
             System.out.println(value + " Is odd");
         }
+        return value;
     }
 }
