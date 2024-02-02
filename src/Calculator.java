@@ -54,24 +54,26 @@ public class Calculator {
         return result;
     }
 
-//funzione addizione,sottrazione,moltiplicazione,divisione,potenza
-
     private static double sum(double a, double b) {
-        return a+b;
+        return a + b;
     }
 
     private static double difference(double a, double b) {
-        return a-b;
+        return a - b;
     }
+
     private static double multiplication(double a, double b) {
-        return a*b;
+        return a * b;
     }
+
     private static double division(double a, double b) {
-        return a/b;
+        return a / b;
     }
+
     private static double exponent(double a, double b) {
         return Math.pow(a,b);
     }
+
     public static double evenOrOdd(double value) {
         if (value % 2 == 0) {
             System.out.println(value + " is even");
