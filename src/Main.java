@@ -12,6 +12,6 @@ public class Main {
         double result = Calculator.executeOperation(operation, type);
         System.out.println("The result of the operation " + operation + " is " + result);
         String.valueOf(Calculator.evenOrOdd(result));
-
+      
     }
 }

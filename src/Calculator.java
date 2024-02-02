@@ -14,6 +14,8 @@ public class Calculator {
             type = "DIVISION";
         } else if (operation.contains("^")) {
             type = "EXPONENT";
+        } else if (operation.contains("=")) {
+            type = "EVEN_OR_ODD";
         } else {
             type = "UNKNOWN";
         }
@@ -46,6 +48,8 @@ public class Calculator {
             case "EXPONENT":
                 result = exponent(a, b);
                 break;
+            case "EVEN_OR_ODD":
+                result = evenOrOdd(a);
             default:
                 System.out.println("Invalid operation");
                 break;
@@ -53,6 +57,7 @@ public class Calculator {
 
         return result;
     }
+
 
     private static double sum(double a, double b) {
         return a + b;
@@ -83,4 +88,3 @@ public class Calculator {
         return value;
     }
 }
-
