@@ -10,12 +10,12 @@ public class Main {
         System.out.println("Hello, this is a calculator!");
         System.out.println("Enter an operation (Ex. 1+2=) and press enter!");
         String operation = input.nextLine();
-        input.close();
         String type = Calculator.recognizeOperation(operation);
         double result = Calculator.executeOperation(operation, type);
-        System.out.println("The result of the operation " + operation + "is" + result);
-        String evenOdd = Calculator.evenOdd(result);
-        System.out.println("The result is: " + evenOdd);
-        develop
+        System.out.println("The result of the operation " + operation + " is " + result);
+        System.out.println("Insert a number to define if the number is odd or even");
+        double result1 = input.nextInt();
+        double evenOdd = Calculator.evenOrOdd(result1);
+
     }
 }
