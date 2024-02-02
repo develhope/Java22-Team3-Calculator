@@ -57,32 +57,33 @@ public class Calculator {
 
         return result;
     }
-    private static double multiplication(double a, double b){
 
-        return a * b;
-    }
-    private static double division(double a, double b){
-        if (b != 0){
-            return a / b;
-        }else{
-            System.out.println("cannot divide by 0");
-        }
-        return 0;
-    }
+
     private static double sum(double a, double b) {
         return a + b;
     }
-    private static double difference(double a, double b){
+
+    private static double difference(double a, double b) {
         return a - b;
     }
-    private static double exponent(double a, double b){
-        return Math.pow(a, b);
+
+    private static double multiplication(double a, double b) {
+        return a * b;
     }
+
+    private static double division(double a, double b) {
+        return a / b;
+    }
+
+    private static double exponent(double a, double b) {
+        return Math.pow(a,b);
+    }
+
     public static double evenOrOdd(double value) {
         if (value % 2 == 0) {
-            System.out.println(value + " Is even");
+            System.out.println(value + " is even");
         } else {
-            System.out.println(value + " Is odd");
+            System.out.println(value + " is odd");
         }
         return value;
     }
